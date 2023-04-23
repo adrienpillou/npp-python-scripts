@@ -1,0 +1,6 @@
+editor.beginUndoAction()
+text = editor.getText()
+values = text.split("\r")
+editor.clearAll()
+editor.setText(", ".join(values))
+editor.endUndoAction()
