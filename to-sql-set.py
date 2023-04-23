@@ -1,0 +1,7 @@
+editor.beginUndoAction()
+editor.rereplace(r"^", r"'")
+editor.rereplace(r"$", r"',")
+line_count = editor.getLineCount()
+editor.gotoLine(line_count)
+editor.deleteBack()
+editor.endUndoAction()
